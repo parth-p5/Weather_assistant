@@ -1,0 +1,69 @@
+intents:
+  # add your intents
+  - greet
+  - goodbye
+  - thank
+  - mood_affirm
+  - mood_deny
+  - mood_great
+  - mood_unhappy
+  - city
+  - weather
+  - out_of_scope
+  - scope_of_work
+
+actions:
+  # all the utter actions from the templates, plus any custom actions
+  - utter_greet
+  - utter_cheer_up
+  - utter_did_that_help
+  - utter_happy
+  - utter_goodbye
+  - utter_thank_reply
+  - utter_weather_help
+  - utter_weather
+  - utter_what_can_do
+  - utter_sorry_cant_help
+  - action_example
+
+templates:
+  # templates the bot should respond with
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_thank_reply:
+  - text: "Happy to help you."
+
+  utter_weather_help: 
+  - text: "Would you like to know {location} weather?"
+
+  utter_weather:
+  - text: "Looking for {location} weather."
+
+  utter_what_can_do:
+  - text: "As of now, I can help you with weather. I'm still learning how to serve you better."
+  
+  utter_sorry_cant_help:
+  - text: "I'm sorry. I cannot help you with this."
+
+entities:
+  # replace with your entities
+  - location
+
+slots:
+  # replace with your slots
+  location:
+    type: text
