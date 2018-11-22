@@ -6,40 +6,19 @@
 * scope_of_work
   - utter_what_can_do
 
-## happy path               <!-- name of the story - just for debugging -->
-* greet              
-  - utter_greet
-* mood_great               <!-- user utterance, in format _intent[entities] -->
-  - utter_happy
-
-## sad path 1               <!-- this is already the start of the next story -->
-* greet
-  - utter_greet             <!-- action of the bot to execute -->
-* mood_unhappy
-  - utter_cheer_up
-  - utter_did_that_help
-* mood_affirm
-  - utter_happy
-
-## sad path 2
-* greet
-  - utter_greet
-* mood_unhappy
-  - utter_cheer_up
-  - utter_did_that_help
-* mood_deny
-  - utter_goodbye
-
-## say goodbye
-* goodbye
-  - utter_goodbye
-
 ## city & affirm path 1
 * greet
   - utter_greet
 * city{"location": "bangalore"}
   - utter_weather_help
 * mood_affirm
+  - utter_weather
+  - action_example
+
+## city & affirm path
+* city{"location": "bangalore"}
+  - utter_weather_help
+* confirmation.yes
   - utter_weather
   - action_example
 
@@ -64,21 +43,29 @@
 * mood_deny
   - utter_goodbye
 
+## city & deny path 3
+* city{"location": "bangalore"}
+  - utter_weather_help
+* confirmation.cancel
+  - utter_confirmation.cancel
+
+## city & deny path 3
+* city{"location": "bangalore"}
+  - utter_weather_help
+* confirmation.no
+  - utter_confirmation.no
+
 ## weather path 1
 * greet
   - utter_greet
 * weather{"location": "bangalore"}
   - utter_weather
   - action_example
-* goodbye
-  - utter_goodbye
 
 ## weather path 2
 * weather{"location": "banglore"}
   - utter_weather
   - action_example
-* goodbye
-  - utter_goodbye
 
 ## weather path 3
 * weather{"location": "banglore"}
@@ -89,9 +76,5 @@
 * weather{"location": "banglore"}
   - utter_weather
   - action_example
-* thank
-  - utter_thank_reply
-
-## thanks
 * thank
   - utter_thank_reply

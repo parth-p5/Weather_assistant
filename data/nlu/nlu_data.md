@@ -13,19 +13,6 @@
 - goodevening
 - good afternoon
 
-## intent:goodbye
-- cu
-- good by
-- cee you later
-- good night
-- good afternoon
-- bye
-- goodbye
-- have a nice day
-- see you around
-- bye bye
-- see you later
-
 ## intent:thank
 - Thanks
 - Thank you
@@ -202,3 +189,15 @@
 - Do you know anything?
 - What do you know?
 - What kind of support can you provide?
+- what can do?
+- what is your ability?
+- what are your abilities?
+- what is the thing that you can do for me?
+- what you can provide for me?
+- what can u do?
+- what all you do?
+- what all u do?
+- what you do?
+- what can you do for me?
+- what all can you do?
+- what are your features?
