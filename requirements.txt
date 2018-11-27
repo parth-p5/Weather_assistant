@@ -1,4 +1,9 @@
+https://github.com/explosion/spacy-models/releases/download/en_core_web_md-2.0.0/en_core_web_md-2.0.0.tar.gz#egg=en_core_web_md
+
+https://files.pythonhosted.org/packages/ca/22/31af18238cdfbf44acf1b28181a476ab3f01774b64dafdf0b32865d15c63/rasa_core_sdk-0.12.1-py2.py3-none-any.whl
+
 rasa_nlu==0.13.6
 rasa_core==0.11.12
 gspread==2.0.0
 spacy==2.0.11
+sklearn_crfsuite==0.3.6

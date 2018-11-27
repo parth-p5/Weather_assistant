@@ -108,7 +108,7 @@ actions:
   - utter_weather
   - utter_what_can_do
   - utter_sorry_cant_help
-  - action_example
+  - action_get_weather
   # samlltalk
   - utter_agent.acquaintance
   - utter_agent.age

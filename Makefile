@@ -19,7 +19,7 @@ clean:
 	rm -rf *.egg-info
 	rm -rf docs/_build
 
-run-action:
+run-actions:
 	python -m rasa_core_sdk.endpoint --actions actions
 
 train-nlu:

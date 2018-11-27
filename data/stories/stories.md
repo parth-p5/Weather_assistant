@@ -13,21 +13,21 @@
   - utter_weather_help
 * mood_affirm
   - utter_weather
-  - action_example
+  - action_get_weather
 
 ## city & affirm path
 * city{"location": "bangalore"}
   - utter_weather_help
 * confirmation.yes
   - utter_weather
-  - action_example
+  - action_get_weather
 
 ## city & affirm path 2
 * city{"location": "bangalore"}
   - utter_weather_help
 * mood_affirm
   - utter_weather
-  - action_example
+  - action_get_weather
 
 ## city & deny path 1
 * greet
@@ -60,21 +60,21 @@
   - utter_greet
 * weather{"location": "bangalore"}
   - utter_weather
-  - action_example
+  - action_get_weather
 
 ## weather path 2
 * weather{"location": "banglore"}
   - utter_weather
-  - action_example
+  - action_get_weather
 
 ## weather path 3
 * weather{"location": "banglore"}
   - utter_weather
-  - action_example
+  - action_get_weather
 
 ## weather path 4
 * weather{"location": "banglore"}
   - utter_weather
-  - action_example
+  - action_get_weather
 * thank
   - utter_thank_reply

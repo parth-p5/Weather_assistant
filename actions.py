@@ -7,7 +7,7 @@ from config import config
 class ActionExample(Action):
 
     def name(self):
-        return "action_example"
+        return "action_get_weather"
 
     def run(self, dispatcher, tracker, domain):
         
